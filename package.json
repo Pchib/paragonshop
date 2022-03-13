@@ -12,7 +12,7 @@
     "client-install": "cd paragon && npm install",
     "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix paragon && npm run build --prefix paragon"
+    "heroku-postbuild": "cd paragon && npm install && npm run build"
   },
   "author": "uicsoft",
   "license": "ISC",
