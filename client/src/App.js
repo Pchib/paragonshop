@@ -5,6 +5,9 @@ import Header from "./components/headers/Header";
 import MainPages from "./components/mainpages/Pages";
 
 function App() {
+	const current = new Date();
+  const date = `${current.getFullYear()}`;
+
   return (
     <DataProvider>
       <Router>
@@ -135,8 +138,8 @@ function App() {
     <div class="footer-bottom">
 			<div class="container">
 				<div class="row">
-					<p class="pull-left">Copyright © 2022 PARAGON Inc. All rights reserved.</p>
-					<p class="pull-right">Designed by <span><a target="_blank" href="http://www.uicsoft.herokuapp.com">Themeum</a></span></p>
+					<p class="pull-left">Copyright ©  {date} PARAGON Inc. All rights reserved.</p>
+					<p class="pull-right">Designed by <span><a target="_blank" href="http://www.uicsoft.herokuapp.com">UicSoft</a></span></p>
 				</div>
 			</div>
 		</div>
