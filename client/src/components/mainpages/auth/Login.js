@@ -1,8 +1,11 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
 
 function Login() {
+    // useEffect(() => {
+    //     window.location.reload(false)      }, []);
+  
     const [user, setUser] = useState({
         email:'', password: ''
     })

@@ -23,7 +23,7 @@ function BtnRender({product, deleteProduct}) {
                     </Link>
                 </>
                 : <>
-                    <Link className="btn  btn-default add-to-cart " to="#!" onClick={() => addCart(product)}><i class="fa fa-shopping-cart"></i>
+                    <Link className="btn  btn-default add-to-cart " to="" onClick={() => addCart(product)}><i class="fa fa-shopping-cart"></i>
                         Add To Cart
                     </Link>
                     {"   "}

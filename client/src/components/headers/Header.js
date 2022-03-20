@@ -55,17 +55,17 @@ function Header() {
                 <h1>
                                    
 
-                    <Link to="/">{isAdmin ? 'Admin' : <img width={100} src="assets2/images/logo.png" />}</Link>
+                    <a href="/">{isAdmin ? 'Admin' : <img width={100} src="assets2/images/logo.png" />}</a>
                 </h1>
             </div>
 
             <ul style={styleMenu}>
-                <li><Link to="/">{isAdmin ? 'Products' : 'Shop'}</Link></li>
+                <li><a href="/">{isAdmin ? 'Products' : 'Shop'}</a></li>
 
                 {isAdmin && adminRouter()}
 
                 {
-                    isLogged ? loggedRouter() : <li><Link to="/login">Login ✥ Register</Link></li>
+                    isLogged ? loggedRouter() : <li><a href='/login' >Login ✥ Register</a></li>
                 }
 
                 <li onClick={() => setMenu(!menu)}>
@@ -78,9 +78,9 @@ function Header() {
                 isAdmin ? '' 
                 :<div className="cart-icon">
                     <span>{cart.length}</span>
-                    <Link to="/cart">
+                    <a href="/cart">
                         <img src={Cart} alt="" width="30" />
-                    </Link>
+                    </a>
                 </div>
             }
             
